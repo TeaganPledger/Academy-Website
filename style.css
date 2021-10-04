@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+Body{
+    text-align: center;
+    color: #733F2D;
+    background-image: url(images/backimage.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+.about-me {
+    
+}
+
+.about-me > .photo {
+    display: block;
+    margin: 0 auto;
+    Width: 320px;
+    height: 320px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 250px;
+    border: 4px solid #733F2D;
+    box-shadow 0 0 0 5px #f16 inset; 
+    
+}
+.about-me > img {
+    display: block;
+    width: 320px;
+    
+    margin: 24px auto;
+}
+.about-me > H1 {
+    text-align: center;
+    margin: 0 0 12px 0;
+    font-family: 'Raleway', sans-serif;
+    color: #B48456; 
+    padding: 20px;
+}
+.about-me > p {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 20px; 
+    font-family:'Source Serif Pro', serif;
+    color: #733F2D; 
+    
+}
+.about-me > a.Button {
+    position: relative;
+    top: 0;
+    display: inline-block; 
+    background: #2E4559;
+    text-decoration: none;
+    color: #fff;
+    padding: 9px 24px;
+    border-radius: 96px;
+    text-transform: uppercase;
+    border:3px solid #2E4559;
+    transition: all .3s ease-in 0s;
+    font: 500 20px/20px 'Raleway', sans-serif;
+}
+.about-me > a.Button:hover {
+    background: #fff;
+    color:#fff;
+    top; -12px;
+    
+    
+}

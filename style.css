@@ -4,15 +4,221 @@
     box-sizing: border-box;
 
 }
-Body{
+body{
+    width: 100%;
     text-align: center;
-    color: #733F2D;
+    color: #01480f;
     background-image: url(images/backimage.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
     background-attachment: fixed;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.banner{
+    height: 84vh;
+    white-space: nowrap;
+    background: url(images/mountains.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 96%, 50% 100%, 0 96%);
+}
+
+.banner:before {
+    content: '\00a0';
+    display: inline-block;
+    position: absolute;
+    z-index: 100;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.3);
+    }
+
+.banner:after {
+    content: '\00a0';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    width: 0px;
+}
+
+.banner > hgroup {
+    position: relative;
+    z-index: 500;
+    display: inline-block;
+    background-color: none;
+    width: 100%;
+    max-width: 720px;
+    vertical-align: middle;
+    white-space: normal;
+    color: #fff;
+}
+
+.banner > hgroup > h1 {
+    font: 46px/48px;
+    font-size: 46px;
+    text-transform: uppercase;
+    font-family: 'raleway', sans-serif;
+}
+
+.banner > hgroup > p {
+    font: 18px/24px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family:'Source Serif Pro', serif;
+}
+.banner > hgroup > a {
+    background:#d4af37;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 6px 24px;
+    display: inline-block;
+    font: 24px/30px;
+    font-family: 'Raleway', sans-serif;
+    margin: 12px 0 0 0;
+    border-radius: 100px;
+}
+
+
+
+
+
+
+
+header {
+/*    background-color: #01480f;*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header > div {
+    overflow: hidden;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header > div > a {
+    display:block;
+    float: left;
+    width: 50%;
+    text-align: left;
+    text-decoration: none;
+    color: #d4af37;
+}
+
+header > div > a > img {
+    width: 60px;
+    margin: 6px;
+    vertical-align: middle;
+}
+
+header > div > a > strong {
+    display: inline-block;
+    vertical-align: middle;  
+}
+
+header > div > nav {
+    float:left;
+    width: 50%;
+    text-align: right;
+}
+
+header > div > nav > a {
+    display:inline-block;
+    vertical-align: middle;
+    color: #d4af37;
+    text-decoration: none;
+    
+}
+
+header > div > nav > a > img {
+    
+    width: 60px;
+    vertical-align: middle;
+    
+    
+}
+
+
+
+
+footer {
+    padding: 20px;
+    vertical-align: middle;
+    padding: 100px;
+    
+    
+    
+}
+
+footer > div {
+/*    background-color: #01480f;*/
+   
+    
+}
+
+footer > div > a {
+    display:block;
+    float: left;
+    width: 50%;
+    text-align: left;
+    text-decoration: none;
+    color: #d4af37;
+}
+
+footer > div > a > img {
+    width: 60px;
+    vertical-align: middle;
+}
+footer > div > a > strong {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+footer > div > nav {
+    padding: 100px
+}
+
+footer > div > nav > a {
+    display:block;
+    float: left;
+    width: 50%;
+    text-align: left;
+    text-decoration: none;
+    color: #d4af37;
+    padding: 10px;
+    font-size: 22px
+}
+
+footer > div > nav > a > img {
+    vertical-align: middle;
+    
+}
+
+
 .about-me {
     
 }
@@ -20,8 +226,8 @@ Body{
 .about-me > .photo {
     display: block;
     margin: 0 auto;
-    Width: 320px;
-    height: 320px;
+    Width: 220px;
+    height: 220px;
     background-size: cover;
     background-position: top center;
     border-radius: 250px;
@@ -32,7 +238,6 @@ Body{
 .about-me > img {
     display: block;
     width: 320px;
-    
     margin: 24px auto;
 }
 .about-me > H1 {
@@ -54,13 +259,13 @@ Body{
     position: relative;
     top: 0;
     display: inline-block; 
-    background: #2E4559;
+    background: #d4af37;
     text-decoration: none;
     color: #fff;
     padding: 9px 24px;
     border-radius: 96px;
     text-transform: uppercase;
-    border:3px solid #2E4559;
+    border:3px solid #d4af37;
     transition: all .3s ease-in 0s;
     font: 500 20px/20px 'Raleway', sans-serif;
 }
@@ -68,6 +273,125 @@ Body{
     background: #fff;
     color:#fff;
     top; -12px;
+}
+
+
+.productlist{
     
+}
+
+.productlist > ul{
+    max-width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.productlist > ul > li{
+    float: left;
+    width: 33.3%;
+    list-style: none;
     
+}
+
+.productlist > ul > li > a{
+    
+}
+
+.productlist > ul > li > a > div{
+    width: 200%;
+    max-width: 200px;
+    height: 200px;
+    background-size: cover!important;
+    display: block;
+    margin: 0 auto;
+    Width: 1300px;
+    height: 220px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 250px;
+    border: 4px solid #733F2D;
+    box-shadow 0 0 0 5px #f16 inset; 
+    
+}
+
+.productlist > ul > li > a > h3{
+   
+}
+
+.productlist > ul > li > a > h4{
+   
+}
+
+
+
+
+
+.product-details {
+    padding:72px 0 0 0;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+.product-details > .primary-photo {
+     width: 49%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.product-details > .primary-photo > img {
+    width:100%;
+}
+
+
+.product-details > .details {
+     width: 49%;
+    padding: 24px;
+    display: inline-block;
+    color: #000;
+    vertical-align: middle;
+}
+
+.product-details > .details > h1 {
+    font: 900 30px/36px railway;
+    text-transform: uppercase; 
+}
+
+.product-details > .details > h2.price {
+    margin: 12px 0 0 0;
+    font:200 30px/36px 'Stick No Bills' , railway;
+}
+
+.product-details > .details > button {
+    padding:6px 18px;
+    margin:12px 0 0 0;
+    font:900 20px/36px railway;
+    text-transform: uppercase;
+    border-radius;9px;
+    border:none;
+    background:#f16;
+    color: #fff;
+}
+
+
+.product-details > .details > p {
+    margin: 24px 0 0 0;
+    font:200 20px/30px railway; 
+}
+
+
+@media all and (max-width: 960px) {
+    .product-details > .primary-photo {
+        display:block;
+        margin:0 auto;
+        width:99%;
+        max-width: 480px;
+    
+    }
+}
+
+
+.snipcart-modal__container {
+    z-index: 10000!important;
 }
